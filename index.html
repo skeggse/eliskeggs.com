@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-<html lang=en><head><meta charset=utf-8><meta name=author content="Eli Skeggs <me@eliskeggs.com>"><meta name=description content="The home page for Eli Skeggs"><meta name=google content=notranslate><meta name=keywords content="resume,résumé,homepage,code,programming,software,development,design,software architecture,engineer,engineering"><title>Eli Skeggs</title><link type="text/css" rel=stylesheet href="http://cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css"><style>html,body{background:#211e1e;color:#dadada;font-size:1.5em}.box{margin-right:15%;margin-left:15%;background:#211e1e}a{color:inherit;text-decoration:underline}pre{font-family:Consolas,monospace}.hide{display:none}</style></head><body><div class=box itemscope itemtype="http://data-vocabulary.org/Person"><pre><span style="color:#6969fa;font-weight:700">import</span> human.Human;
+<html lang=en><head><meta charset=utf-8><meta name=author content="Eli Skeggs"><meta name=description content="The home page for Eli Skeggs"><meta name=google content=notranslate><meta name=keywords content="code,design,development,engineer,engineering,homepage,programming,resume,résumé,software,software architecture,worcester polytech,worcester polytechnic institute,wpi"><title>Eli Skeggs</title><link type="text/css" rel=stylesheet href="http://cdn.jsdelivr.net/normalize/3.0.2/normalize.min.css"><style type="text/css">html,body{background:#211e1e;color:#dadada;font-size:1.5em}.box{margin-right:15%;margin-left:15%;background:#211e1e}a{color:inherit;text-decoration:underline}pre{font-family:Consolas,monospace}.hide{display:none}.key{color:#47b8d6}.str{color:#ad9361}.com{color:#555}</style></head><body><div class=box itemscope itemtype="http://data-vocabulary.org/Person"><div class=hide><a href="http://blog.eliskeggs.com" itemprop=url>Blog</a><a href="http://github.com/skeggse" itemprop=url>GitHub</a><a href="http://stackoverflow.com/users/345645" itemprop=url>StackOverflow</a><a href="http://linkedin.com/in/skeggse" itemprop=url>LinkedIn</a><a href="http://www.colbyskeggs.com" rel=friend>Colby Skeggs</a></div>
 
-Human eliSkeggs <span style="color:#47b8d6">=</span> <span style="color:#47b8d6">new</span> Human(
-  name<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<span itemprop=name>Eli Skeggs</span>'</span>,
-  blog<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<a class=hide href="http://blog.eliskeggs.com" itemprop=url>Blog</a><a href="http://blog.eliskeggs.com">blog.eliskeggs.com</a>'</span>,
-  github<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<a class=hide href="http://github.com/skeggse" itemprop=url>GitHub</a><a href="http://github.com/skeggse">skeggse</a>'</span>,
-  <span style="color:#555">// email concealed to mitigate spam</span>
-  email<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'me@thisdomain'</span>,
-  stackOverflow<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<a class=hide href="http://stackoverflow.com/users/345645" itemprop=url>StackOverflow</a><a href="http://stackoverflow.com/users/345645">skeggse</a>'</span>,
+<pre><span style="color:#6969fa;font-weight:700">import</span> human.Human;
 
-  linkedIn<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<a class=hide href="http://linkedin.com/in/skeggse" itemprop=url>LinkedIn</a><a href="http://linkedin.com/in/skeggse">skeggse</a>'</span>,
-  employer<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<a href="http://www.globesherpa.com" itemprop=affiliation>GlobeSherpa</a>'</span>,
-  occupation<span style="color:#47b8d6">:</span> <span style="color:#ad9361">'<span itemprop=title>Software Developer</span>'</span>
+Human eliSkeggs <span class=key>=</span> <span class=key>new</span> Human(
+  name<span class=key>:</span> <span class=str>'<span itemprop=name>Eli Skeggs</span>'</span>,
+  blog<span class=key>:</span> <span class=str>'<a href="http://blog.eliskeggs.com">blog.eliskeggs.com</a>'</span>,
+  github<span class=key>:</span> <span class=str>'<a href="http://github.com/skeggse">skeggse</a>'</span>,
+  <span class=com>// email concealed to mitigate spam</span>
+  email<span class=key>:</span> <span class=str>'me@thisdomain'</span>,
+  stackOverflow<span class=key>:</span> <span class=str>'<a href="http://stackoverflow.com/users/345645">skeggse</a>'</span>,
+
+  linkedIn<span class=key>:</span> <span class=str>'<a href="http://linkedin.com/in/skeggse">skeggse</a>'</span>,
+  employer<span class=key>:</span> <span class=str>'<a href="http://www.globesherpa.com" itemprop=affiliation>GlobeSherpa</a>'</span>,
+  occupation<span class=key>:</span> <span class=str>'<span itemprop=title>Software Developer</span>'</span>,
+
+  school<span class=key>:</span> <span class=str>'<a href="http://www.wpi.edu">Worcester Polytechnic Institute</a>'</span>,
+
+  interests<span class=key>:</span> [
+    <span class=str>'algorithms'</span>,
+    <span class=str>'parkour'</span>,
+    <span class=str>'programming'</span>,
+    <span class=str>'robotics'</span>,
+    <span class=str>'technical theater'</span>,
+    <span class=str>'ultimate frisbee'</span>
+  ]
 );
 
-eliSkeggs.connect(<a class=hide href="http://www.colbyskeggs.com" rel=friend>Colby Skeggs</a><a href="http://www.colbyskeggs.com">Colby_Skeggs</a>);
-eliSkeggs.connect(<span style="color:#ad9361">'<a href="http://www.noeticdesign.com" rel=friend>Pete Skeggs</a>'</span>);
+eliSkeggs.connect(<a href="http://www.colbyskeggs.com">Colby_Skeggs</a>);
+eliSkeggs.connect(<span class=str>'<a href="http://www.noeticdesign.com" rel=friend>Pete Skeggs</a>'</span>);
 
-<span style="color:#555">// <span style="color:#47b8d6">TODO</span>: add more detail</span></pre>
-</div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-35054639-2','auto');ga('send','pageview');</script></body></html>
+<span class=com>// <span class=key>TODO</span>: add projects</span></pre>
+</div><script defer>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-35054639-2','auto');ga('send','pageview');</script></body></html>
